@@ -1,4 +1,0 @@
-[      96ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
-[     260ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:3000/node_modules/.vite/deps/react-icons_fa.js?v=e1257756:0
-[     261ms] Failed to fetch dynamically imported module: http://localhost:3000/node_modules/@tanstack/react-start/dist/plugin/default-entry/client.tsx?t=1787988535999
-[     260ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:3000/node_modules/.vite/deps/react-icons_fc.js?v=501a2f15:0

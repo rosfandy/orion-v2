@@ -1,3 +1,6 @@
+# .commandcode
+# .playwright-mcp
+# .storybook
 node_modules
 .DS_Store
 dist

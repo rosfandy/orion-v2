@@ -1,6 +1,0 @@
-- Communicates in Indonesian (Bahasa Indonesia); expects responses in Indonesian. Confidence: 0.95
-- Prefers using existing tooling over adding new test dependencies; avoids installing libraries (e.g., React Testing Library) solely for a single task. Confidence: 0.9
-- Prefers simple, deterministic test patterns; prioritizes pure mapping/contract tests over complex browser interaction testing when dependencies are impractical. Confidence: 0.85
-- Prefers extracting pure helper functions into separate modules to make behavior testable, rather than changing feature logic. Confidence: 0.8
-- Prefers direct action (writing tests/code) over creating investigation reports or documentation when the goal is to deliver regression coverage. Confidence: 0.8
-- Prefers colocated or near-source test placement (e.g., `*.test.ts` beside implementation). Confidence: 0.7
