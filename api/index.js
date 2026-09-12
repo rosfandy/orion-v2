@@ -3,7 +3,12 @@ import startServer from '../dist/server/server.js'
 export default async function handler(req, res) {
   const protocol = req.headers['x-forwarded-proto'] || 'https'
   const host = req.headers.host || 'localhost'
-  const url = new URL(req.url || '/', `${protocol}://${host}`)
+  // Vercel rewrites requests to /api. Restore the original application path
+  // so TanStack Router receives /, /auth/login, /workspace/..., etc.
+  const requestedPath =
+    typeof req.query?.path === 'string' ? req.query.path : '/'
+  const routePath = requestedPath.replace(/^\/+(?=.)/, '/') || '/'
+  const url = new URL(routePath, `${protocol}://${host}`)
 
   const headers = new Headers()
   for (const [key, value] of Object.entries(req.headers)) {
