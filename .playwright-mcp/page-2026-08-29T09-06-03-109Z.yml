@@ -1,0 +1,14 @@
+- main [ref=f18e2]:
+  - generic [ref=f18e3]:
+    - generic [ref=f18e5]:
+      - button "Open navigation" [ref=f18e6]
+      - button "My Workspace" [ref=f18e12]
+      - button "Search ⌘K" [ref=f18e20]:
+        - generic [ref=f18e21]: Search
+        - generic [ref=f18e26]: ⌘K
+      - button [ref=f18e29]:
+        - img "Bagus Rosfandy" [ref=f18e31]: BA
+    - generic [ref=f18e37]:
+      - paragraph [ref=f18e38]: Workspace
+      - heading "Welcome back" [level=1] [ref=f18e39]
+      - paragraph [ref=f18e40]: Select a project or start a new task from the workspace navigation.

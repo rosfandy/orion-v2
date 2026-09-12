@@ -1,0 +1,457 @@
+[     755ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[     760ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[   72193ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.29 [vite] (client) hmr update /src/styles.css?direct, /src/components/ui/Search.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[   72194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.29 [vite] (ssr) page reload src/components/ui/Search.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[   72194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.29 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[   72194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.29 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[   72194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.29 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[   80127ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.37 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[   80127ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.22.37 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  162508ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.00 [vite] (client) hmr update /src/styles.css?direct, /src/components/ui/Search.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  162508ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.00 [vite] (ssr) page reload src/components/ui/Search.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  162508ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.00 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  162508ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.00 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  162509ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.00 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  175753ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.13 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  175753ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.24.13 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  226386ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.25.04 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  226387ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.25.04 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  283897ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.26.01 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  283897ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.26.01 [vite] (ssr) page reload src/components/fragment/Navbar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  283897ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.26.01 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  317258ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.26.35 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  317258ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.26.35 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  371585ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.27.29 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  371585ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.27.29 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  403736ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787992081560:0
+[  403737ms] [ERROR] [vite] Failed to reload /src/components/fragment/Sidebar.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:3000/src/routes/__root.tsx:193
+[  403752ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.28.01 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  403753ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.28.01 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  403753ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[  403753ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[  446284ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.28.44 [vite] (client) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  446285ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.28.44 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  446923ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  446934ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  476977ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.14 [vite] (client) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  476978ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.14 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  476978ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.14 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  477227ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  477230ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  477282ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787992154807:0
+[  477366ms] Error: Switched to client rendering because the server rendering errored:
+
+Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `,` or `)` but found `}`
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/fragment/Sidebar.tsx:103:1 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m 83 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249m [0m(
+ [38;5;240m    │[0m          ┬  
+ [38;5;240m    │[0m          ╰── Opened here
+ [38;5;240m    │[0m 
+ [38;5;246m103 │[0m }
+ [38;5;240m    │[0m ┬  
+ [38;5;240m    │[0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+
+    at transformWithOxc (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:4103:19)
+    at TransformPluginContext.transform (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:4174:26)
+    at EnvironmentPluginContainer.transform (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:30932:51)
+    at async loadAndTransform (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:20671:26)
+    at async fetchModule (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:34343:15)
+    at async handleInvoke (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:26886:21)
+    at async EventEmitter.listenerForInvokeHandler (file:///C:/Users/smartlink/myfiles/orion/node_modules/vite/dist/node/chunks/node.js:26941:13)
+[  477368ms] [ERROR] %o
+
+%s
+
+%s
+ TypeError: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component The above error occurred in the <Lazy> component. React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary. @ http://localhost:3000/src/routes/__root.tsx:193
+[  477368ms] [WARNING] Warning: The following error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute! @ http://localhost:3000/src/routes/__root.tsx:193
+[  477368ms] [WARNING] Warning: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:193
+[  477372ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.15 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26) @ http://localhost:3000/src/routes/__root.tsx:259
+[  477372ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.15 [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  477684ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  477688ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  477756ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787992154807:0
+[  477779ms] [ERROR] %o
+
+%s
+
+%s
+ TypeError: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component The above error occurred in the <Lazy> component. React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary. @ http://localhost:3000/src/routes/__root.tsx:193
+[  477779ms] [WARNING] Warning: The following error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute! @ http://localhost:3000/src/routes/__root.tsx:193
+[  477780ms] [WARNING] Warning: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:193
+[  477809ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.15 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  477979ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.15 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  477980ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Error in renderToReadableStream: {name: Error, message: Transform failed with 1 error:
+
+[31m[PARSE_ERROR]…0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+, stack: Error: Transform failed with 1 error:
+
+[31m[PARSE…e_modules/vite/dist/node/chunks/node.js:26941:13)} {componentStack: 
+    at Lazy (<anonymous>)
+    at MatchInnerImpl (…eact-start-server/dist/esm/StartServer.js:13:113)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  478286ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.16 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  490829ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Error in renderToReadableStream: {name: Error, message: Transform failed with 1 error:
+
+[31m[PARSE_ERROR]…0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+, stack: Error: Transform failed with 1 error:
+
+[31m[PARSE…e_modules/vite/dist/node/chunks/node.js:26941:13)} {componentStack: 
+    at Lazy (<anonymous>)
+    at MatchInnerImpl (…eact-start-server/dist/esm/StartServer.js:13:113)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  490954ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.28 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  499716ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Error in renderToReadableStream: {name: Error, message: Transform failed with 1 error:
+
+[31m[PARSE_ERROR]…0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+, stack: Error: Transform failed with 1 error:
+
+[31m[PARSE…e_modules/vite/dist/node/chunks/node.js:26941:13)} {componentStack: 
+    at Lazy (<anonymous>)
+    at MatchInnerImpl (…eact-start-server/dist/esm/StartServer.js:13:113)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  499881ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.37 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  503582ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  503586ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  503646ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787992154807:0
+[  503673ms] [ERROR] %o
+
+%s
+
+%s
+ TypeError: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component The above error occurred in the <Lazy> component. React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary. @ http://localhost:3000/src/routes/__root.tsx:193
+[  503673ms] [WARNING] Warning: The following error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute! @ http://localhost:3000/src/routes/__root.tsx:193
+[  503674ms] [WARNING] Warning: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:193
+[  503709ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.41 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  503873ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.41 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  515374ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  515378ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  515442ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787992154807:0
+[  515467ms] [ERROR] %o
+
+%s
+
+%s
+ TypeError: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component The above error occurred in the <Lazy> component. React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary. @ http://localhost:3000/src/routes/__root.tsx:193
+[  515468ms] [WARNING] Warning: The following error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute! @ http://localhost:3000/src/routes/__root.tsx:193
+[  515468ms] [WARNING] Warning: Failed to fetch dynamically imported module: http://localhost:3000/src/routes/index.tsx?t=1787992154807&tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:193
+[  515495ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.53 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  515603ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.53 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  517214ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Error in renderToReadableStream: {name: Error, message: Transform failed with 1 error:
+
+[31m[PARSE_ERROR]…0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+, stack: Error: Transform failed with 1 error:
+
+[31m[PARSE…e_modules/vite/dist/node/chunks/node.js:26941:13)} {componentStack: 
+    at Lazy (<anonymous>)
+    at MatchInnerImpl (…eact-start-server/dist/esm/StartServer.js:13:113)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  517409ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.55 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  518062ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Error in renderToReadableStream: {name: Error, message: Transform failed with 1 error:
+
+[31m[PARSE_ERROR]…0m ╰── `,` or `)` expected
+[38;5;246m─────╯[0m
+, stack: Error: Transform failed with 1 error:
+
+[31m[PARSE…e_modules/vite/dist/node/chunks/node.js:26941:13)} {componentStack: 
+    at Lazy (<anonymous>)
+    at MatchInnerImpl (…eact-start-server/dist/esm/StartServer.js:13:113)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  518253ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.29.56 [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Expected `,` or `)` but found `}`
+     ╭─[ srchttp://localhost:3000/__tsd/open-source?source=%2Fcomponents%2Ffragment%2FSidebar.tsx%3A103%3A1 ]
+     │
+  83 │   return (
+     │          ┬  
+     │          ╰── Opened here
+     │ 
+ 103 │ }
+     │ ┬  
+     │ ╰── `,` or `)` expected
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/smartlink/myfiles/orion/src/components/fragment/Sidebar.tsx
+      at transformWithOxc (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4103%3A19)
+      at TransformPluginContext.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A4174%3A26)
+      at EnvironmentPluginContainer.transform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A30932%3A51)
+      at async loadAndTransform (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A20671%3A26)
+      at async viteTransformMiddleware (file:http://localhost:3000/__tsd/open-source?source=%2F%2F%2FC%3A%2FUsers%2Fsmartlink%2Fmyfiles%2Forion%2Fnode_modules%2Fvite%2Fdist%2Fnode%2Fchunks%2Fnode.js%3A25205%3A20) @ http://localhost:3000/src/routes/__root.tsx:259
+[  539194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.17 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  539194ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.17 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  539195ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.17 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:259
+[  539195ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.17 [vite] (ssr) page reload src/routes/index.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  539195ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.17 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  539244ms] [ERROR] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; {name: HTTPError, message: aborted, stack: Error: aborted
+    at abortIncoming (node:_http_se…:521:24)
+    at TCP.<anonymous> (node:net:350:12)} @ http://localhost:3000/src/routes/__root.tsx:259
+[  539850ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  539853ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[  554164ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.31 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  554164ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.31 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  554164ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.31 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  564838ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.42 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  564838ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.42 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  564838ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.42 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  565095ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.42 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component @ http://localhost:3000/src/routes/__root.tsx:259
+[  565095ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.42 [vite] (ssr) page reload src/routes/index.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  580241ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.58 [vite] (client) page reload storybook-static/index.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  580241ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.58 [vite] (client) page reload storybook-static/iframe.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  580241ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.30.58 [vite] (client) page reload storybook-static/manifests/components.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  584909ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.31.01 [vite] (client) page reload storybook-static/index.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  585031ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.31.02 [vite] (client) page reload storybook-static/manifests/components.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  592686ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.31.08 [vite] (client) page reload storybook-static/iframe.html @ http://localhost:3000/src/routes/__root.tsx:259
+[  602965ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.31.20 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  602965ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 15.31.20 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx:259

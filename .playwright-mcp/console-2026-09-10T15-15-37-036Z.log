@@ -1,0 +1,19 @@
+[     343ms] [WARNING] The 'ariaLabel' prop on 'PopoverProvider' will become mandatory in Storybook 11. Provide a concise, accessible label describing the popover's purpose. @ http://localhost:6006/sb-manager/globals-runtime.js:122
+[     347ms] [WARNING] The 'ariaLabel' prop on 'Button' will become mandatory in Storybook 11. Buttons with text content should set 'ariaLabel={false}' to indicate that they are accessible as-is. Buttons without text content must provide a meaningful 'ariaLabel' for accessibility. The button content is: Share. @ http://localhost:6006/sb-manager/globals-runtime.js:122
+[     873ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ http://localhost:6006/sb-manager/runtime.js:14387
+[     888ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ http://localhost:6006/sb-manager/runtime.js:14387
+[     965ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ http://localhost:6006/sb-manager/runtime.js:14387
+[     967ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ http://localhost:6006/sb-manager/runtime.js:14387
+[   80876ms] TypeError: target.getAttribute is not a function
+    at focusInInput (http://localhost:6006/node_modules/.cache/storybook/10.5.10/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=cf11f3b3:34727:58)
+    at PreviewWeb.onKeydown (http://localhost:6006/node_modules/.cache/storybook/10.5.10/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=cf11f3b3:34797:67)
+    at eval (eval at evaluate (:311:30), <anonymous>:11:14)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[   82825ms] TypeError: target.getAttribute is not a function
+    at focusInInput (http://localhost:6006/node_modules/.cache/storybook/10.5.10/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=cf11f3b3:34727:58)
+    at PreviewWeb.onKeydown (http://localhost:6006/node_modules/.cache/storybook/10.5.10/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=cf11f3b3:34797:67)
+    at eval (eval at evaluate (:311:30), <anonymous>:44:16)
+    at async guard (eval at evaluate (:311:30), <anonymous>:5:31)
+    at async eval (eval at evaluate (:311:30), <anonymous>:32:5)
+    at async <anonymous>:337:30

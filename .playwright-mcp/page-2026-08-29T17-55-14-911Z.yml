@@ -1,0 +1,47 @@
+- generic [ref=f5e3]:
+  - generic [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - heading "Your Workspaces" [level=1] [ref=f5e6]
+      - paragraph [ref=f5e7]: Manage and access all your organization's active environments.
+    - button "Create Workspace" [ref=f5e8]
+  - generic [ref=f5e12]:
+    - link "Design Team workspace Pro Design Team Central hub for product design, assets, and UX research. 12 members Open" [ref=f5e13] [cursor=pointer]:
+      - generic [ref=f5e14]:
+        - img "Design Team workspace" [ref=f5e15]: D
+        - generic [ref=f5e16]: Pro
+      - generic [ref=f5e17]:
+        - heading "Design Team" [level=3] [ref=f5e18]
+        - paragraph [ref=f5e19]: Central hub for product design, assets, and UX research.
+      - generic [ref=f5e20]:
+        - generic [ref=f5e21]: 12 members
+        - button "Open" [ref=f5e26]
+    - link "Marketing Ops workspace Free Forever Marketing Ops Campaign tracking, social media planning, and analytics. 5 members Open" [ref=f5e27] [cursor=pointer]:
+      - generic [ref=f5e28]:
+        - img "Marketing Ops workspace" [ref=f5e29]: M
+        - generic [ref=f5e30]: Free Forever
+      - generic [ref=f5e31]:
+        - heading "Marketing Ops" [level=3] [ref=f5e32]
+        - paragraph [ref=f5e33]: Campaign tracking, social media planning, and analytics.
+      - generic [ref=f5e34]:
+        - generic [ref=f5e35]: 5 members
+        - button "Open" [ref=f5e40]
+    - link "Engineering workspace Pro Engineering Sprint planning, architecture docs, and release notes. 24 members Open" [ref=f5e41] [cursor=pointer]:
+      - generic [ref=f5e42]:
+        - img "Engineering workspace" [ref=f5e43]: E
+        - generic [ref=f5e44]: Pro
+      - generic [ref=f5e45]:
+        - heading "Engineering" [level=3] [ref=f5e46]
+        - paragraph [ref=f5e47]: Sprint planning, architecture docs, and release notes.
+      - generic [ref=f5e48]:
+        - generic [ref=f5e49]: 24 members
+        - button "Open" [ref=f5e54]
+    - link "HR & Admin workspace Free Forever HR & Admin Company policies, onboarding materials, and general admin. 3 members Open" [ref=f5e55] [cursor=pointer]:
+      - generic [ref=f5e56]:
+        - img "HR & Admin workspace" [ref=f5e57]: H
+        - generic [ref=f5e58]: Free Forever
+      - generic [ref=f5e59]:
+        - heading "HR & Admin" [level=3] [ref=f5e60]
+        - paragraph [ref=f5e61]: Company policies, onboarding materials, and general admin.
+      - generic [ref=f5e62]:
+        - generic [ref=f5e63]: 3 members
+        - button "Open" [ref=f5e68]

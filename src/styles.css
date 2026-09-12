@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-hanken: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--lm-background);
+  --color-on-background: var(--lm-on-background);
+  --color-surface: var(--lm-surface);
+  --color-surface-container-lowest: var(--lm-surface-container-lowest);
+  --color-surface-container-low: var(--lm-surface-container-low);
+  --color-surface-container: var(--lm-surface-container);
+  --color-surface-container-high: var(--lm-surface-container-high);
+  --color-surface-container-highest: var(--lm-surface-container-highest);
+  --color-surface-variant: var(--lm-surface-variant);
+  --color-on-surface: var(--lm-on-surface);
+  --color-on-surface-variant: var(--lm-on-surface-variant);
+  --color-outline: var(--lm-outline);
+  --color-outline-variant: var(--lm-outline-variant);
+  --color-primary: var(--lm-primary);
+  --color-on-primary: var(--lm-on-primary);
+  --color-primary-container: var(--lm-primary-container);
+  --color-on-primary-container: var(--lm-on-primary-container);
+  --color-secondary: var(--lm-secondary);
+  --color-on-secondary: var(--lm-on-secondary);
+  --color-secondary-container: var(--lm-secondary-container);
+  --color-error: var(--lm-error);
+  --color-on-error: var(--lm-on-error);
+  --color-error-container: var(--lm-error-container);
+  --color-on-error-container: var(--lm-on-error-container);
+  --text-display-title: 28px;
+  --text-display-title--line-height: 36px;
+  --text-display-title--font-weight: 700;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-label-lg: 16px;
+  --text-label-lg--line-height: 24px;
+  --text-label-lg--font-weight: 600;
+  --text-label-md: 14px;
+  --text-label-md--line-height: 20px;
+  --text-label-md--font-weight: 500;
+  --text-error-text: 14px;
+  --text-error-text--line-height: 20px;
+}
+
+:root,
+.light {
+  --lm-background: #f8f9ff;
+  --lm-on-background: #0b1c30;
+  --lm-surface: #f8f9ff;
+  --lm-surface-container-lowest: #ffffff;
+  --lm-surface-container-low: #eff4ff;
+  --lm-surface-container: #e5eeff;
+  --lm-surface-container-high: #dce9ff;
+  --lm-surface-container-highest: #d3e4fe;
+  --lm-surface-variant: #d3e4fe;
+  --lm-on-surface: #0b1c30;
+  --lm-on-surface-variant: #434655;
+  --lm-outline: #737686;
+  --lm-outline-variant: #c3c6d7;
+  --lm-primary: #004ac6;
+  --lm-on-primary: #ffffff;
+  --lm-primary-container: #2563eb;
+  --lm-on-primary-container: #eeefff;
+  --lm-secondary: #b90538;
+  --lm-on-secondary: #ffffff;
+  --lm-secondary-container: #dc2c4f;
+  --lm-error: #ba1a1a;
+  --lm-on-error: #ffffff;
+  --lm-error-container: #ffdad6;
+  --lm-on-error-container: #93000a;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: #e2e8f0;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--lm-background);
+  color: var(--lm-on-background);
+  font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

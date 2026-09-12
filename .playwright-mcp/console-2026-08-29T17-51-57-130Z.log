@@ -1,0 +1,4 @@
+[     235ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[     237ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193

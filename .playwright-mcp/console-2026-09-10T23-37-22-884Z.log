@@ -1,0 +1,105 @@
+[     291ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[     297ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[     574ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[     575ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[     747ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[    1596ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[    1754ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[    3617ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[    3774ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[    7629ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[    7780ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[  217330ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 06.41.00 [vite] (client) hmr update /src/styles.css?direct, /src/features/workspace/components/listtasks/ListTasks.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  217330ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 06.41.00 [vite] (ssr) page reload src/features/workspace/components/listtasks/ListTasks.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[  217330ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 06.41.00 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[  289818ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[  289833ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 1055271ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 1055282ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 1055762ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 1055764ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1056003ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 1056007ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[ 1056008ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 1542251ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1542321ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 1546620ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 1546638ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 1549679ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 1549680ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1549978ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 1550569ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[ 1550731ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1551033ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 1552750ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1553050ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 1556758ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 1557057ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2062056ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[ 2062060ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 2390903ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 2390912ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 2391518ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 2391520ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2391757ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2392348ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2392537ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2392775ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2394247ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[ 2394248ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 2549620ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 2549621ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2549621ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2552674ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 2552680ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 2553248ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 2553250ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2553597ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2553966ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2554263ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2556587ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2556588ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2558264ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2558594ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2560604ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 2562604ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 2688729ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 07.22.11 [vite] (client) hmr update /src/styles.css?direct, /src/features/workspace/components/listtasks/ListTasks.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2688729ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 07.22.11 [vite] (ssr) page reload src/features/workspace/components/listtasks/ListTasks.tsx @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2688729ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 07.22.11 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx:259
+[ 2771293ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[ 2771309ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 4162417ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 4162429ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 4162967ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 4162969ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4163280ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 4745275ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:3000/src/routes/__root.tsx:193
+[ 4745278ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://localhost:3000/__tsd/console-pipe/sse:0
+[ 4747327ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 4747328ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4748748ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=b5b6ec5b:14335
+[ 4748760ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/auth/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx:193
+[ 4749263ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/auth/me:0
+[ 4749264ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4749579ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 4750302ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4750612ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 4752890ms] [WARNING] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; Warning: A notFoundError was encountered on the route with ID "__root__", but a notFoundComponent option was not configured, nor was a router level defaultNotFoundComponent configured. Consider configuring at least one of these to avoid TanStack Router's overly generic defaultNotFoundComponent (<p>Not Found</p>) @ http://localhost:3000/src/routes/__root.tsx:259
+[ 4756141ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4756142ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0
+[ 4760169ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/label/space?workspaceId=CyQv2O_PLKPk:0
+[ 4760246ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3001/api/graphs/ILke-mTq00hM:0

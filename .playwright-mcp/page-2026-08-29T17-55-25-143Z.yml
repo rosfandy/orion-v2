@@ -1,0 +1,16 @@
+- generic [active] [ref=f5e1]:
+  - main [ref=f5e69]:
+    - generic [ref=f5e70]:
+      - generic [ref=f5e72]:
+        - button "Open navigation" [ref=f5e73]
+        - button "My Workspace" [ref=f5e79]
+        - button "Search ⌘K" [ref=f5e87]:
+          - generic [ref=f5e88]: Search
+          - generic [ref=f5e93]: ⌘K
+        - button [ref=f5e96]:
+          - img "Bagus Rosfandy" [ref=f5e98]: BA
+      - generic [ref=f5e104]:
+        - paragraph [ref=f5e105]: Workspace
+        - heading "Welcome back" [level=1] [ref=f5e106]
+        - paragraph [ref=f5e107]: Select a project or start a new task from the workspace navigation.
+  - button "Open TanStack Devtools" [ref=f5e108] [cursor=pointer]

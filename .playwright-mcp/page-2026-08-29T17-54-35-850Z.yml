@@ -1,0 +1,47 @@
+- generic [ref=f4e3]:
+  - generic [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - heading "Your Workspaces" [level=1] [ref=f4e6]
+      - paragraph [ref=f4e7]: Manage and access all your organization's active environments.
+    - button "Create Workspace" [ref=f4e8]
+  - generic [ref=f4e12]:
+    - article [ref=f4e13]:
+      - generic [ref=f4e14]:
+        - img "Design Team workspace" [ref=f4e15]: D
+        - generic [ref=f4e16]: Pro
+      - generic [ref=f4e17]:
+        - heading "Design Team" [level=3] [ref=f4e18]
+        - paragraph [ref=f4e19]: Central hub for product design, assets, and UX research.
+      - generic [ref=f4e20]:
+        - generic [ref=f4e21]: 12 members
+        - button "Open" [ref=f4e26]
+    - article [ref=f4e27]:
+      - generic [ref=f4e28]:
+        - img "Marketing Ops workspace" [ref=f4e29]: M
+        - generic [ref=f4e30]: Free Forever
+      - generic [ref=f4e31]:
+        - heading "Marketing Ops" [level=3] [ref=f4e32]
+        - paragraph [ref=f4e33]: Campaign tracking, social media planning, and analytics.
+      - generic [ref=f4e34]:
+        - generic [ref=f4e35]: 5 members
+        - button "Open" [ref=f4e40]
+    - article [ref=f4e41]:
+      - generic [ref=f4e42]:
+        - img "Engineering workspace" [ref=f4e43]: E
+        - generic [ref=f4e44]: Pro
+      - generic [ref=f4e45]:
+        - heading "Engineering" [level=3] [ref=f4e46]
+        - paragraph [ref=f4e47]: Sprint planning, architecture docs, and release notes.
+      - generic [ref=f4e48]:
+        - generic [ref=f4e49]: 24 members
+        - button "Open" [ref=f4e54]
+    - article [ref=f4e55]:
+      - generic [ref=f4e56]:
+        - img "HR & Admin workspace" [ref=f4e57]: H
+        - generic [ref=f4e58]: Free Forever
+      - generic [ref=f4e59]:
+        - heading "HR & Admin" [level=3] [ref=f4e60]
+        - paragraph [ref=f4e61]: Company policies, onboarding materials, and general admin.
+      - generic [ref=f4e62]:
+        - generic [ref=f4e63]: 3 members
+        - button "Open" [ref=f4e68]

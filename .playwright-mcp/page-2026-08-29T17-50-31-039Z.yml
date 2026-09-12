@@ -1,0 +1,57 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - button "Open navigation" [ref=e6]
+      - button "My Workspace" [ref=e12]
+      - button "Search ⌘K" [ref=e20]:
+        - generic [ref=e21]: Search
+        - generic [ref=e26]: ⌘K
+      - button [ref=e29]:
+        - img "Bagus Rosfandy" [ref=e31]: BA
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - heading "Your Workspaces" [level=1] [ref=e39]
+          - paragraph [ref=e40]: Manage and access all your organization's active environments.
+        - button "Create Workspace" [ref=e41]
+      - generic [ref=e45]:
+        - article [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: D
+            - generic [ref=e49]: Pro
+          - generic [ref=e50]:
+            - heading "Design Team" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Central hub for product design, assets, and UX research.
+          - generic [ref=e53]:
+            - generic [ref=e54]: 12 members
+            - button "Open" [ref=e59]
+        - article [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e62]: M
+            - generic [ref=e63]: Free Forever
+          - generic [ref=e64]:
+            - heading "Marketing Ops" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Campaign tracking, social media planning, and analytics.
+          - generic [ref=e67]:
+            - generic [ref=e68]: 5 members
+            - button "Open" [ref=e73]
+        - article [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: E
+            - generic [ref=e77]: Pro
+          - generic [ref=e78]:
+            - heading "Engineering" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Sprint planning, architecture docs, and release notes.
+          - generic [ref=e81]:
+            - generic [ref=e82]: 24 members
+            - button "Open" [ref=e87]
+        - article [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: H
+            - generic [ref=e91]: Free Forever
+          - generic [ref=e92]:
+            - heading "HR & Admin" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Company policies, onboarding materials, and general admin.
+          - generic [ref=e95]:
+            - generic [ref=e96]: 3 members
+            - button "Open" [ref=e101]

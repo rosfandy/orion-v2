@@ -1,0 +1,20 @@
+- main [ref=f18e2]:
+  - generic [ref=f18e3]:
+    - generic [ref=f18e4]:
+      - heading "Welcome back!" [level=1] [ref=f18e9]
+      - paragraph [ref=f18e10]:
+        - text: Don't have an account?
+        - link "Sign up" [ref=f18e11] [cursor=pointer]:
+          - /url: /register
+    - generic [ref=f18e12]:
+      - button "Continue with Google" [ref=f18e13]
+      - button "Continue with GitHub" [ref=f18e19]
+    - generic [ref=f18e22]: or
+    - generic [ref=f18e27]:
+      - textbox "Work email" [ref=f18e31]
+      - generic [ref=f18e33]:
+        - textbox "Password" [ref=f18e34]
+        - button "Show password" [ref=f18e36]
+      - button "Log In" [ref=f18e40]
+    - link "Forgot Password?" [ref=f18e42] [cursor=pointer]:
+      - /url: /forgot-password

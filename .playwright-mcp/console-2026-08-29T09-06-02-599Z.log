@@ -1,0 +1,71 @@
+[     774ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[     784ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[   84412ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.07.26 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[   84413ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.07.26 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[   84413ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.07.26 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  171219ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.08.53 [vite] (client) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  171220ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.08.53 [vite] (ssr) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  172121ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  172126ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  183184ms] [INFO] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; File C:\Users\smartlink\myfiles\orion\src\routeTree.gen.ts was modified by another process during processing. @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183184ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.09.05 [vite] (client) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183184ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.09.05 [vite] (ssr) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183184ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.09.05 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183184ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.09.05 [vite] (client) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183184ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.09.05 [vite] (ssr) page reload src/routeTree.gen.ts @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  183995ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:14335
+[  183999ms] [WARNING] [tanstack-router] These exports from "C:/Users/smartlink/myfiles/orion/src/routes/login.tsx" will not be code-split and will increase your bundle size:
+- AuthPage
+For the best optimization, these items should either have their export statements removed, or be imported from another location that is not a route file. @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  365805ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.12.08 [vite] (client) hmr update /src/styles.css?direct, /src/components/ui/Button.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  365805ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.12.08 [vite] (ssr) page reload src/components/ui/Button.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  365805ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.12.08 [vite] (ssr) program reload @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  551911ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.14 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  551911ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.14 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  567320ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.29 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  567320ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.29 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  567523ms] [ERROR] %o
+
+%s
+
+%s
+ TypeError: Cannot read properties of undefined (reading 'includes')
+    at MenuItem (http://localhost:3000/src/components/fragment/Sidebar.tsx?t=1787994929747:12:26)
+    at Object.react_stack_bottom_frame (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:12866:12)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:4213:19)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:5569:16)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:6140:20)
+    at runWithFiberInDEV (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:851:66)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:8429:92)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:8325:37)
+    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:8309:6)
+    at performWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=9b07a86f:7994:27) The above error occurred in the <MenuItem> component. React will try to recreate this component tree from scratch using the error boundary you provided, CatchBoundary. @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  567526ms] [WARNING] Warning: The following error wasn't caught by any route! At the very least, consider setting an 'errorComponent' in your RootRoute! @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  567526ms] [WARNING] Warning: Cannot read properties of undefined (reading 'includes') @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  580217ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.42 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  580217ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.15.42 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  612013ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.14 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  612013ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.14 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  630445ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.32 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  630445ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.32 [vite] (ssr) page reload src/routes/index.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  630760ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. team-space @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:193
+[  645640ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.48 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  645640ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.16.48 [vite] (ssr) page reload src/routes/index.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  711279ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.17.53 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  711279ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.17.53 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  759863ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.18.42 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  759863ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.18.42 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  792867ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.19.15 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  792868ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.19.15 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  843424ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.20.05 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  843424ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.20.05 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  910874ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.21.13 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  910874ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.21.13 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  920834ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.21.23 [vite] (client) hmr update /src/styles.css?direct, /src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  920834ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.21.23 [vite] (ssr) page reload src/components/fragment/Sidebar.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  971757ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.22.14 [vite] (client) hmr update /src/styles.css?direct, /src/routes/index.tsx, /src/routes/index.tsx?tsr-split=component @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259
+[  971757ms] [LOG] %c[Server]%c color: #9333ea; font-weight: bold; color: inherit; 16.22.14 [vite] (ssr) page reload src/routes/index.tsx @ http://localhost:3000/src/routes/__root.tsx?t=1787993049507:259

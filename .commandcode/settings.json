@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(npx tsc --noEmit 2 >& 1)",
+      "Shell(bun:*)",
+      "Shell(bunx tsc --noEmit 2 >& 1)",
+      "Shell(npx vitest run src/features/workspace/components/tasks/taskSerialization.test.ts src/features/graphs/services/graphService.test.ts 2>&1)",
+      "Shell(npx tsc --noEmit src/features/workspace/components/listtasks/ListTasks.stories.tsx 2 >& 1)",
+      "Shell(./node_modules/.bin/tsc:*)",
+      "Shell(node_modules/.bin/tsc.exe:*)",
+      "Shell(npx vitest run 2>&1)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
