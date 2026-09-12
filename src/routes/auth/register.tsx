@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { gsap } from 'gsap'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 import { Form } from '#/components/fragment/Form'
 import { Button } from '#/components/ui/Button'
@@ -33,24 +32,6 @@ export default function Register() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
-  const formRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!formRef.current) return
-    const animation = gsap.from(
-      formRef.current.querySelectorAll('input, button[type="submit"]'),
-      {
-        opacity: 0,
-        y: 12,
-        duration: 0.45,
-        ease: 'power2.out',
-        stagger: 0.08,
-      },
-    )
-    return () => {
-      animation.kill()
-    }
-  }, [])
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(at_0%_0%,#ffe8f0_0,transparent_50%),radial-gradient(at_100%_0%,#e5f0ff_0,transparent_50%),radial-gradient(at_50%_100%,#fff_0,transparent_50%)] px-4 py-8 font-sans text-on-surface">
@@ -78,88 +59,96 @@ export default function Register() {
           <div className="flex-grow border-t border-outline-variant" />
         </div>
 
-        <div ref={formRef}>
-          <Form
-            className="space-y-3"
-            onFinish={async (values) => {
-              setIsLoading(true)
-              setError(null)
-              try {
-                const data = await register({
-                  email: String(values.email ?? ''),
-                  password: String(values.password ?? ''),
-                  confirmationPassword: String(
-                    values.confirmationPassword ?? '',
-                  ),
-                })
-                window.localStorage.setItem('token', data.token)
-                window.localStorage.setItem('user', JSON.stringify(data.user))
-                void navigate('/', { replace: true })
-              } catch (cause) {
-                setError(
-                  cause instanceof Error ? cause.message : 'Unable to register',
-                )
-              } finally {
-                setIsLoading(false)
-              }
-            }}
+        <Form
+          className="space-y-3"
+          onFinish={async (values) => {
+            setIsLoading(true)
+            setError(null)
+            try {
+              const data = await register({
+                name: String(values.name ?? ''),
+                email: String(values.email ?? ''),
+                password: String(values.password ?? ''),
+                confirmationPassword: String(
+                  values.confirmationPassword ?? '',
+                ),
+              })
+              window.localStorage.setItem('token', data.token)
+              window.localStorage.setItem('user', JSON.stringify(data.user))
+              void navigate('/', { replace: true })
+            } catch (cause) {
+              setError(
+                cause instanceof Error ? cause.message : 'Unable to register',
+              )
+            } finally {
+              setIsLoading(false)
+            }
+          }}
+        >
+          <Form.Item
+            name="name"
+            label="Full name"
+            rules={[{ required: true, message: 'Full name is required' }]}
           >
-            <Form.Item
-              name="email"
-              label="Work email"
-              rules={[
-                { required: true, message: 'Email required' },
-                { type: 'email' },
-              ]}
-            >
-              <Input type="email" placeholder="Work email" />
-            </Form.Item>
-            <Form.Item
-              name="password"
-              label="Password"
-              rules={[{ required: true, message: 'Password required' }]}
-            >
-              <Input
-                type={showPassword ? 'text' : 'password'}
-                placeholder="Password"
-                trailing={
-                  <PasswordToggle
-                    visible={showPassword}
-                    onToggle={() => setShowPassword((visible) => !visible)}
-                  />
-                }
-              />
-            </Form.Item>
-            <Form.Item
-              name="confirmationPassword"
-              label="Confirmation password"
-              rules={[
-                { required: true, message: 'Please confirm your password.' },
-                {
-                  validator: (value, values) =>
-                    value !== values.password
-                      ? 'Passwords do not match.'
-                      : undefined,
-                },
-              ]}
-            >
-              <Input
-                type={showConfirmation ? 'text' : 'password'}
-                placeholder="Confirmation password"
-                trailing={
-                  <PasswordToggle
-                    visible={showConfirmation}
-                    onToggle={() => setShowConfirmation((visible) => !visible)}
-                  />
-                }
-              />
-            </Form.Item>
-            {error ? <p className="text-sm text-error">{error}</p> : null}
-            <Button type="submit" loading={isLoading} className="mt-2 w-full">
-              Create account
-            </Button>
-          </Form>
-        </div>
+            <Input placeholder="Full name" />
+          </Form.Item>
+          <Form.Item
+            name="email"
+            label="Work email"
+            rules={[
+              { required: true, message: 'Email required' },
+              { type: 'email' },
+            ]}
+          >
+            <Input type="email" placeholder="Work email" />
+          </Form.Item>
+          <Form.Item
+            name="password"
+            label="Password"
+            rules={[{ required: true, message: 'Password required' }]}
+          >
+            <Input
+              id="reg-password"
+              type={showPassword ? 'text' : 'password'}
+              placeholder="Password"
+              trailing={
+                <PasswordToggle
+                  visible={showPassword}
+                  onToggle={() => setShowPassword((visible) => !visible)}
+                />
+              }
+            />
+          </Form.Item>
+          <Form.Item
+            name="confirmationPassword"
+            label="Confirmation password"
+            rules={[
+              { required: true, message: 'Please confirm your password.' },
+              {
+                validator: (value, values) =>
+                  value !== values.password
+                    ? 'Passwords do not match.'
+                    : undefined,
+              },
+            ]}
+          >
+            <Input
+              id="reg-confirm-password"
+              type={showConfirmation ? 'text' : 'password'}
+              placeholder="Confirmation password"
+              trailing={
+                <PasswordToggle
+                  visible={showConfirmation}
+                  onToggle={() => setShowConfirmation((visible) => !visible)}
+                />
+              }
+            />
+          </Form.Item>
+          {error ? <p className="text-sm text-error">{error}</p> : null}
+          <Button type="submit" loading={isLoading} className="mt-2 w-full">
+            Create account
+          </Button>
+        </Form>
       </section>
     </main>
   )

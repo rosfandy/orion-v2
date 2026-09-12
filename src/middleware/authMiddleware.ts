@@ -3,13 +3,26 @@ import { redirect } from '@tanstack/react-router'
 const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'http://localhost:3001/api'
 
 export async function hasAuthSession() {
+  const token = window.localStorage.getItem('token')
+
   try {
-    const response = await fetch(`${apiBaseUrl}/auth/me`, {
-      credentials: 'include',
-    })
-    if (!response.ok) return false
-    const result = (await response.json()) as { success?: boolean }
-    return result.success === true
+    if (token) {
+      const response = await fetch(`${apiBaseUrl}/auth/me`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      if (!response.ok) return false
+      const result = (await response.json()) as { success?: boolean }
+      return result.success === true
+    } else {
+      const response = await fetch(`${apiBaseUrl}/auth/me`, {
+        credentials: 'include',
+      })
+      if (!response.ok) return false
+      const result = (await response.json()) as { success?: boolean }
+      return result.success === true
+    }
   } catch {
     return false
   }
