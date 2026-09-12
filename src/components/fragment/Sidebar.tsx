@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ComponentType, ReactNode } from 'react'
-import { useRouter } from '@tanstack/react-router'
+import { useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import {
   MdAdd,
@@ -77,7 +77,7 @@ function MenuItem({
   onDelete?: (item: SidebarItem) => void
   onToggle: (key: string) => void
 }) {
-  const router = useRouter({ warn: false })
+  const navigate = useNavigate()
   const selected = selectedKeys.includes(item.key)
   const hasChildren = Boolean(item.children?.length)
   const expandable = hasChildren || item.expandable === true
@@ -164,17 +164,11 @@ function MenuItem({
           )}
           onClick={() => {
             if (item.type === 'list' && workspaceId) {
-              void router.navigate({
-                to: '/workspace/$id/s/l/$listid',
-                params: { id: workspaceId, listid: item.key },
-              })
+              void navigate(`/workspace/${workspaceId}/s/l/${item.key}`)
               return
             }
             if (item.key === 'members' && workspaceId) {
-              void router.navigate({
-                to: '/workspace/$id/m',
-                params: { id: workspaceId },
-              })
+              void navigate(`/workspace/${workspaceId}/m`)
               return
             }
             onSelect(item)

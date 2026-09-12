@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { useParams } from 'react-router-dom'
 import type {
   GraphRelation,
   GraphSpace,
@@ -14,10 +14,6 @@ import {
   graphToTasks,
 } from '#/features/workspace/components/tasks/taskSerialization'
 import { parseTagIds } from '#/features/workspace/components/tags'
-
-export const Route = createFileRoute('/workspace/$id/s/l/$listid')({
-  component: ListTasksPage,
-})
 
 function findListNameInRelations(
   node: GraphRelation,
@@ -81,8 +77,8 @@ function tasksWithTags(node: GraphSpace): ListTask[] {
   })
 }
 
-function ListTasksPage() {
-  const { id, listid } = Route.useParams()
+export default function ListTasksPage() {
+  const { id = '', listid = '' } = useParams<{ id: string; listid: string }>()
   const {
     data: graph,
     update,

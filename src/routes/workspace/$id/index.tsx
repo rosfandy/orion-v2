@@ -1,11 +1,7 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { useParams } from 'react-router-dom'
 
-export const Route = createFileRoute('/workspace/$id/')({
-  component: WorkspaceHome,
-})
-
-function WorkspaceHome() {
-  const { id } = Route.useParams()
+export default function WorkspaceHome() {
+  const { id } = useParams<{ id: string }>()
 
   return (
     <section className="flex min-h-[calc(100vh-3rem)] items-center justify-center p-6">

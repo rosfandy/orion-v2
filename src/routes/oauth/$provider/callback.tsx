@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react'
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useNavigate, useParams } from 'react-router-dom'
 import { Button } from '#/components/ui/Button'
 import { hasAuthSession } from '#/middleware/authMiddleware'
 import { getCurrentUser } from '#/features/auth/services/authService'
 
-export const Route = createFileRoute('/oauth/$provider/callback')({
-  component: OAuthCallback,
-})
-
-function OAuthCallback() {
+export default function OAuthCallback() {
   const navigate = useNavigate()
-  const { provider } = Route.useParams()
+  const { provider = 'provider' } = useParams<{ provider: string }>()
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -59,7 +55,7 @@ function OAuthCallback() {
             <p className="mt-2 text-body-sm text-on-surface-variant">{error}</p>
             <Button
               className="mt-6"
-              onClick={() => navigate({ to: '/auth/login' })}
+              onClick={() => navigate('/auth/login')}
             >
               Back to login
             </Button>

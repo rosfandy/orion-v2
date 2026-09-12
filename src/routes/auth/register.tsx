@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 import { Form } from '#/components/fragment/Form'
@@ -7,8 +7,6 @@ import { Button } from '#/components/ui/Button'
 import { Input } from '#/components/ui/Input'
 import { GithubAuth, GoogleAuth } from '#/features/auth/components'
 import { register } from '#/features/auth/services/authService'
-
-export const Route = createFileRoute('/auth/register')({ component: Register })
 
 function PasswordToggle({
   visible,
@@ -29,7 +27,7 @@ function PasswordToggle({
   )
 }
 
-function Register() {
+export default function Register() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmation, setShowConfirmation] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -96,7 +94,7 @@ function Register() {
                 })
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('user', JSON.stringify(data.user))
-                void navigate({ to: '/', replace: true })
+                void navigate('/', { replace: true })
               } catch (cause) {
                 setError(
                   cause instanceof Error ? cause.message : 'Unable to register',

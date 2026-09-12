@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { gsap } from 'gsap'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 import { Form } from '#/components/fragment/Form'
 import { Button } from '#/components/ui/Button'
@@ -8,32 +7,11 @@ import { Input } from '#/components/ui/Input'
 import { GithubAuth, GoogleAuth } from '#/features/auth/components'
 import { login } from '#/features/auth/services/authService'
 
-export const Route = createFileRoute('/auth/login')({ component: AuthPage })
-
-export function AuthPage() {
+export default function AuthPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
-  const formRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!formRef.current) return
-    const animation = gsap.from(
-      formRef.current.querySelectorAll('input, button[type="submit"]'),
-      {
-        opacity: 0,
-        y: 12,
-        duration: 0.45,
-        ease: 'power2.out',
-        stagger: 0.08,
-      },
-    )
-    return () => {
-      animation.kill()
-    }
-  }, [])
-
   return (
     <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(at_0%_0%,#ffe8f0_0,transparent_50%),radial-gradient(at_100%_0%,#e5f0ff_0,transparent_50%),radial-gradient(at_50%_100%,#fff_0,transparent_50%)] px-4 py-8 font-sans text-on-surface">
       <section className="w-full max-w-[420px] rounded-xl bg-surface-container-lowest p-8 shadow-lg sm:p-10">
@@ -61,7 +39,7 @@ export function AuthPage() {
           <div className="flex-grow border-t border-outline-variant" />
         </div>
 
-        <div ref={formRef}>
+        <div>
           <Form
             className="space-y-3"
             onFinish={async (values) => {
@@ -74,7 +52,7 @@ export function AuthPage() {
                 })
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('user', JSON.stringify(data.user))
-                void navigate({ to: '/', replace: true })
+        void navigate('/', { replace: true })
               } catch (cause) {
                 setError(
                   cause instanceof Error ? cause.message : 'Unable to log in',

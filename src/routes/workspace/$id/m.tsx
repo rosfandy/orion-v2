@@ -1,13 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { useParams } from 'react-router-dom'
 import { useCurrentUserId } from '#/features/auth/hooks/useCurrentUserId'
 import { MembersPage } from '#/features/workspaces/components/members/MembersPage'
 
-export const Route = createFileRoute('/workspace/$id/m')({
-  component: MembersRoute,
-})
-
-function MembersRoute() {
-  const { id } = Route.useParams()
+export default function MembersRoute() {
+  const { id = '' } = useParams<{ id: string }>()
   const currentUserId = useCurrentUserId()
 
   return <MembersPage workspaceId={id} currentUserId={currentUserId} />

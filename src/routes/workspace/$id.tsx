@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Outlet, createFileRoute, useMatch } from '@tanstack/react-router'
+import { Outlet, useLocation, useParams } from 'react-router-dom'
 import { AppLayout } from '#/components/layout/AppLayout'
 import { Form } from '#/components/fragment/Form'
 import type { SidebarItem } from '#/components/fragment/Sidebar'
@@ -9,10 +9,8 @@ import { Modal } from '#/components/ui/Modal'
 import { createSidebarItems } from '#/features/navigation/sidebarItems'
 import { useGraph, useGraphById } from '#/features/graphs/hooks/useGraph'
 
-export const Route = createFileRoute('/workspace/$id')({ component: Workspace })
-
-function Workspace() {
-  const { id } = Route.useParams()
+export default function Workspace() {
+  const { id = '' } = useParams<{ id: string }>()
   const { data: graph, update, remove, isUpdating } = useGraph(id)
   const [activeItem, setActiveItem] = useState('all-tasks')
   const [selectedGraphId, setSelectedGraphId] = useState<string>()
@@ -28,15 +26,13 @@ function Workspace() {
   const refreshedNodes = selectedGraph
     ? { [selectedGraph.meta.id]: selectedGraph }
     : {}
-  const listMatch = useMatch({
-    from: '/workspace/$id/s/l/$listid',
-    shouldThrow: false,
-  })
+  const location = useLocation()
+  const listId = location.pathname.match(/\/s\/l\/([^/]+)/)?.[1]
 
   return (
     <AppLayout
       sidebarItems={createSidebarItems(graph, refreshedNodes)}
-      activeItem={listMatch?.params.listid ?? activeItem}
+      activeItem={listId ?? activeItem}
       workspaceId={id}
       onSidebarSelect={(key, item) => {
         setActiveItem(key)

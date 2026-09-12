@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { MdAdd } from 'react-icons/md'
 import { Card } from '#/components/fragment/Card'
@@ -6,18 +6,14 @@ import { Form } from '#/components/fragment/Form'
 import { Button } from '#/components/ui/Button'
 import { Input } from '#/components/ui/Input'
 import { Modal } from '#/components/ui/Modal'
-import { authMiddleware, hasAuthSession } from '#/middleware/authMiddleware'
+import { hasAuthSession } from '#/middleware/authMiddleware'
 import { useWorkspaces } from '#/features/workspaces/hooks/useWorkspaces'
 import { useWorkspaceMembers } from '#/features/workspaces/hooks/useWorkspaceMembers'
 import type { Workspace } from '#/features/workspaces/services/workspaceService'
 import { useCurrentUserId } from '#/features/auth/hooks/useCurrentUserId'
 
-export const Route = createFileRoute('/')({
-  beforeLoad: authMiddleware,
-  component: WorkspaceList,
-})
+export default function WorkspaceList() {
 
-function WorkspaceList() {
   const navigate = useNavigate()
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [modal, setModal] = useState<
@@ -256,7 +252,7 @@ function WorkspaceCard({
   openModal,
 }: {
   workspace: Workspace
-  navigate: (options: { to: string; params: Record<string, unknown> }) => void
+  navigate: (to: string) => void
   openModal: (type: 'create' | 'edit' | 'member' | 'delete' | null, workspace?: Workspace) => void
 }) {
   const currentUserId = useCurrentUserId()
@@ -276,10 +272,7 @@ function WorkspaceCard({
       }
       plan={workspace.plan ?? 'Free'}
       onOpen={() =>
-        navigate({
-          to: '/workspace/$id',
-          params: { id: workspace.graph_id },
-        })
+        navigate(`/workspace/${workspace.graph_id}`)
       }
     >
       {isCreator ? (

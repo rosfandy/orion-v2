@@ -6,9 +6,11 @@ import { Dropdown } from '#/components/ui/Dropdown'
 import { Search } from '#/components/ui/Search'
 import { useLogout } from '#/features/auth/hooks/useLogout'
 import { cn } from '#/lib/cn'
-import { Link } from '@tanstack/react-router'
+import { Link } from 'react-router-dom'
 
 export type NavbarProps = {
+  workspaceId?: string
+  onMenuClick?: () => void
   userName?: string
   userEmail?: string
   avatarSrc?: string
