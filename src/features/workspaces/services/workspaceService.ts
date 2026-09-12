@@ -52,21 +52,28 @@ export function updateWorkspace(id: string, input: Partial<WorkspaceInput>) {
 export function deleteWorkspace(id: string) {
   return request<void>({ url: `/workspaces/${id}`, method: 'DELETE' })
 }
-export function addWorkspaceMember(id: string, email: string) {
+export function addWorkspaceMember(id: string, userId: string) {
   return request<Workspace>({
     url: `/workspaces/${id}/members`,
     method: 'POST',
-    data: { email },
+    data: { user_id: userId },
   })
 }
 
 export async function searchUserByEmailExact(email: string): Promise<SearchUser> {
-  const { data: result } = await apiClient.get<{ success: boolean; data: SearchUser; message: string }>(
+  const { data: result } = await apiClient.get<{
+    success: boolean
+    data: SearchUser[]
+    message: string
+  }>(
     '/users/search/email',
     { params: { email } },
   )
   if (!result.success) throw new Error(result.message || 'User search failed')
-  return result.data
+
+  const user = result.data?.[0]
+  if (!user) throw new Error('No user found with that email')
+  return user
 }
 
 export function removeWorkspaceMember(id: string, userId: string) {

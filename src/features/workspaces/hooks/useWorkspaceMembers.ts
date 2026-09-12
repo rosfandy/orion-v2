@@ -44,7 +44,7 @@ export function useWorkspaceMembers({
   }
 
   const addMutation = useMutation({
-    mutationFn: (email: string) => addWorkspaceMember(workspaceId, email),
+    mutationFn: (userId: string) => addWorkspaceMember(workspaceId, userId),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: workspaceMembersQueryKey(workspaceId),

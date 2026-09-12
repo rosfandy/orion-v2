@@ -53,6 +53,9 @@ export function MembersPage({ workspaceId, currentUserId }: Props) {
       if (!email.trim()) return
       try {
         const user = await searchUserByEmail(email)
+        if (!user || !user.email) {
+          throw new Error('User search returned an invalid response')
+        }
         setFoundUser(user)
         setSearchError(null)
       } catch {
@@ -69,7 +72,7 @@ export function MembersPage({ workspaceId, currentUserId }: Props) {
   const handleSelectUser = useCallback(
     async (user: SearchUser) => {
       try {
-        await addMember(user.email)
+        await addMember(user.id)
         handleCloseModal()
       } catch {
         setFoundUser(null)
@@ -176,6 +179,8 @@ function AddMemberModal({
   onSelect,
   onDismiss,
 }: AddMemberModalProps) {
+  const foundUserName = foundUser?.name?.trim() || foundUser?.email || 'User'
+
   return (
     <Modal open={open} onClose={onClose} title="Add member">
       {/* State A: just the email input */}
@@ -220,7 +225,7 @@ function AddMemberModal({
             className="flex w-full items-center gap-3 rounded-lg border border-primary/30 bg-primary-container/10 p-3 transition-colors hover:bg-primary-container/20"
           >
             <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary text-label-md font-bold text-on-primary">
-              {foundUser.name
+              {foundUserName
                 .trim()
                 .split(/\s+/)
                 .filter(Boolean)
@@ -230,7 +235,7 @@ function AddMemberModal({
             </span>
             <span className="min-w-0 text-left">
               <span className="block truncate text-body-sm font-semibold text-on-surface">
-                {foundUser.name}
+                {foundUserName}
               </span>
               <span className="truncate text-body-sm text-on-surface-variant">
                 {foundUser.email}
