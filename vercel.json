@@ -1,0 +1,26 @@
+{
+  "builds": [
+    {
+      "src": "dist/server/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/client/assets/$1"
+    },
+    {
+      "src": "/(.*)\\.css",
+      "dest": "/dist/client/$1.css"
+    },
+    {
+      "src": "/(.*)\\.js",
+      "dest": "/dist/client/$1.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/server/server.js"
+    }
+  ]
+}
