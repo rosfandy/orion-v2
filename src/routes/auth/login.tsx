@@ -52,7 +52,7 @@ export function AuthPage() {
 
         <div className="mb-6 space-y-3">
           <GoogleAuth />
-          <GithubAuth />
+          {/* <GithubAuth /> */}
         </div>
 
         <div className="mb-6 flex items-center">

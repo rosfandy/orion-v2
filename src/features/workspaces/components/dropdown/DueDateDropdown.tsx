@@ -28,7 +28,11 @@ function DueDateArrow() {
       strokeWidth="2"
       viewBox="0 0 24 24"
     >
-      <path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M14 5l7 7m0 0l-7 7m7-7H3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -44,7 +48,9 @@ export function DueDateDropdown({
   contentClassName,
 }: DueDateDropdownProps) {
   const isControlled = value !== undefined
-  const [internalValue, setInternalValue] = useState<DueDateValue | null>(defaultValue)
+  const [internalValue, setInternalValue] = useState<DueDateValue | null>(
+    defaultValue,
+  )
   const [open, setOpen] = useState(false)
   const [draftStart, setDraftStart] = useState('')
   const [draftEnd, setDraftEnd] = useState('')
@@ -92,9 +98,13 @@ export function DueDateDropdown({
           <MdCalendarMonth className="size-3 shrink-0 text-slate-400" />
           {current ? (
             <span className="flex items-center gap-0.5 text-slate-700">
-              <span className="tracking-tight">{current.start || startPlaceholder}</span>
+              <span className="tracking-tight">
+                {current.start || startPlaceholder}
+              </span>
               <DueDateArrow />
-              <span className="tracking-tight">{current.end || endPlaceholder}</span>
+              <span className="tracking-tight">
+                {current.end || endPlaceholder}
+              </span>
             </span>
           ) : (
             <span className="text-slate-400">{placeholder}</span>
@@ -103,10 +113,12 @@ export function DueDateDropdown({
       }
     >
       <header className="border-b border-slate-100 px-4 pt-3 pb-2.5">
-        <h2 className="text-[12px] font-bold uppercase tracking-wider text-slate-500">Due Date</h2>
+        <h2 className="text-[12px] font-bold uppercase tracking-wider text-slate-500">
+          Due Date
+        </h2>
       </header>
       <div className="px-3 py-2.5">
-        <div className="flex items-center justify-between rounded-md border border-[#FF6B55] bg-white px-2.5 py-1.5 shadow-[0_0_0_1px_#FF6B55] transition-all">
+        <div className="flex items-center justify-between rounded-md border border-primary bg-white px-2.5 py-1.5 shadow-[0_0_0_1px_#FF6B55] transition-all">
           <div className="flex min-w-0 flex-1 items-center gap-1.5 text-[14px] font-medium text-slate-700 select-none">
             <input
               type="text"
@@ -127,7 +139,7 @@ export function DueDateDropdown({
           <button
             type="button"
             aria-label="Clear date field"
-            className="ml-1.5 flex size-4 shrink-0 items-center justify-center rounded-full bg-slate-200/90 text-slate-400 transition-colors hover:bg-slate-300 hover:text-slate-600 focus:outline-none focus:ring-1 focus:ring-slate-400"
+            className="bg-primary ml-1.5 flex size-4 shrink-0 items-center justify-center rounded-full bg-slate-200/90 text-slate-400 transition-colors hover:bg-slate-300 hover:text-slate-600 focus:outline-none focus:ring-1 focus:ring-slate-400"
             onClick={() => {
               setDraftStart('')
               setDraftEnd('')
@@ -149,14 +161,24 @@ export function DueDateDropdown({
           className="inline-flex items-center text-[12.5px] font-medium text-slate-500 transition-colors hover:text-slate-700 focus:outline-none"
           onClick={handleClear}
         >
-          <svg className="mr-1 size-3" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-            <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            className="mr-1 size-3"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
           Clear
         </button>
         <button
           type="button"
-          className="rounded-md bg-[#FF6B55] px-4 py-1 text-[12.5px] font-medium text-white shadow-sm transition duration-150 ease-in-out hover:bg-[#f05b44] hover:shadow focus:outline-none focus:ring-2 focus:ring-[#FF6B55] focus:ring-offset-1 active:bg-[#e04f38]"
+          className="rounded-md bg-primary px-4 py-1 text-[12.5px] font-medium text-white shadow-sm transition duration-150 ease-in-out hover:bg-[#f05b44] hover:shadow focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 active:bg-primary"
           onClick={handleSave}
         >
           Save
@@ -165,3 +187,4 @@ export function DueDateDropdown({
     </DropdownPopover>
   )
 }
+

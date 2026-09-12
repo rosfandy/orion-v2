@@ -138,6 +138,7 @@ export function AppLayout({
               )}
             >
               <Navbar
+                workspaceId={workspaceId}
                 userName={userName}
                 userEmail={userEmail}
                 onMenuClick={toggleMobileSidebar}

@@ -13,7 +13,23 @@ import type { WorkspaceInput } from '#/features/workspaces/services/workspaceSer
 
 export const workspacesQueryKey = ['workspaces'] as const
 
-export function useWorkspaces() {
+/** Return type of useWorkspaces — exported for test consumers. */
+export type UseWorkspacesReturn = {
+  workspaces: any[]
+  isLoading: boolean
+  error: unknown
+  refresh: () => Promise<any>
+  get: (id: string) => Promise<any>
+  create: (input: WorkspaceInput) => Promise<any>
+  update: (id: string, input: Partial<WorkspaceInput>) => Promise<any>
+  remove: (id: string) => Promise<void>
+  addMember: (id: string, email: string) => Promise<any>
+  removeMember: (id: string, userId: string) => Promise<any>
+  searchUserByEmail: (email: string) => Promise<{ id: string; name: string; email: string }>
+  isMutating: boolean
+}
+
+export function useWorkspaces(): UseWorkspacesReturn {
   const queryClient = useQueryClient()
   const query = useQuery({
     queryKey: workspacesQueryKey,
@@ -61,7 +77,7 @@ export function useWorkspaces() {
     workspaces: query.data ?? [],
     isLoading: query.isLoading,
     error: query.error,
-    refresh: query.refetch,
+    refresh: () => query.refetch(),
     get: (id: string) => getWorkspace(id),
     create: (input: WorkspaceInput) => createMutation.mutateAsync(input),
     update: (id: string, input: Partial<WorkspaceInput>) =>

@@ -1,10 +1,11 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, vi, afterEach } from 'vitest'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { renderHook, waitFor } from '@testing-library/react'
 import React from 'react'
 import { useWorkspaces, workspacesQueryKey } from '#/features/workspaces/hooks/useWorkspaces'
 import * as workspaceService from '#/features/workspaces/services/workspaceService'
+import type { UseWorkspacesReturn } from './useWorkspaces'
 
 const defaultWsList = [
   { id: 'ws-1', name: 'Alpha', graph_id: 'g1', members: [] },
@@ -80,7 +81,7 @@ describe('useWorkspaces — mutation invalidation', () => {
 
     const { result } = renderHook(() => useWorkspaces(), { wrapper })
 
-    await (result.current as Record<string, unknown>).addMember('ws-1', 'new@example.com')
+    await (result.current as UseWorkspacesReturn).addMember('ws-1', 'new@example.com')
 
     await waitFor(() => {
       expect(invalidateSpy).toHaveBeenCalledWith(
@@ -105,7 +106,7 @@ describe('useWorkspaces — mutation invalidation', () => {
 
     const { result } = renderHook(() => useWorkspaces(), { wrapper })
 
-    await (result.current as Record<string, unknown>).removeMember('ws-1', 'user-x')
+    await (result.current as UseWorkspacesReturn).removeMember('ws-1', 'user-x')
 
     await waitFor(() => {
       expect(invalidateSpy).toHaveBeenCalledWith(
@@ -130,7 +131,7 @@ describe('useWorkspaces — mutation invalidation', () => {
 
     const { result } = renderHook(() => useWorkspaces(), { wrapper })
 
-    await (result.current as Record<string, unknown>).searchUserByEmail('ada@example.com')
+    await (result.current as UseWorkspacesReturn).searchUserByEmail('ada@example.com')
 
     await waitFor(() => {
       expect(invalidateSpy).not.toHaveBeenCalledWith(

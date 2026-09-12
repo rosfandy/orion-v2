@@ -5,7 +5,15 @@ import type {
 } from '#/features/graphs/services/graphService'
 import { useGraph, useGraphById } from '#/features/graphs/hooks/useGraph'
 import { ListTasks } from '#/features/workspace/components/listtasks'
-import { graphToTasks } from '#/features/workspace/components/tasks/taskSerialization'
+import type { ListTask } from '#/features/workspace/components/listtasks'
+import {
+  coerceAssignees,
+  coerceDueDate,
+  coercePriority,
+  coerceStatus,
+  graphToTasks,
+} from '#/features/workspace/components/tasks/taskSerialization'
+import { parseTagIds } from '#/features/workspace/components/tags'
 
 export const Route = createFileRoute('/workspace/$id/s/l/$listid')({
   component: ListTasksPage,
@@ -38,10 +46,50 @@ function findListName(spaces: GraphSpace[], target: string) {
   return undefined
 }
 
+// U8 stores tags as a JSON string on the task meta; parse it once at the
+// graph boundary so rows always receive a deduped id array. HAS_SUBTASK
+// relations are mapped recursively into nested subtask rows.
+function toSubtask(relation: GraphRelation, parentId: string): ListTask {
+  const { id, name, assignee, duedate, priority, status, tags } = relation.data
+  return {
+    id,
+    name,
+    status: coerceStatus(status),
+    assignees: coerceAssignees(assignee),
+    dueDate: coerceDueDate(duedate),
+    priority: coercePriority(priority),
+    tags: parseTagIds(tags),
+    parentId,
+    expandable: Boolean(relation.HAS_SUBTASK?.length),
+    subtasks: relation.HAS_SUBTASK?.map((child) => toSubtask(child, id)),
+  }
+}
+
+function tasksWithTags(node: GraphSpace): ListTask[] {
+  return graphToTasks(node).map((task) => {
+    const relation = node.HAS_TASKS?.find(
+      (candidate) => candidate.data.id === task.id,
+    )
+    return {
+      ...task,
+      tags: parseTagIds(relation?.data.tags),
+      expandable: Boolean(task.expandable || relation?.HAS_SUBTASK?.length),
+      subtasks: relation?.HAS_SUBTASK?.map((child) =>
+        toSubtask(child, task.id),
+      ),
+    }
+  })
+}
+
 function ListTasksPage() {
   const { id, listid } = Route.useParams()
-  const { data: graph, update } = useGraph(id)
-  const { data: listNode } = useGraphById(listid)
+  const {
+    data: graph,
+    update,
+    remove,
+    refetch: refetchGraph,
+  } = useGraph(id)
+  const { data: listNode, refetch: refetchListNode } = useGraphById(listid)
   const listName = graph ? findListName(graph, listid) : undefined
 
   return (
@@ -49,7 +97,8 @@ function ListTasksPage() {
       <ListTasks
         listId={listid}
         title={listName ?? 'Tasks'}
-        tasks={listNode ? graphToTasks(listNode) : undefined}
+        workspaceId={id}
+        tasks={listNode ? tasksWithTags(listNode) : undefined}
         onAddTask={async (name) => {
           await update({
             graphId: listid,
@@ -60,6 +109,10 @@ function ListTasksPage() {
         }}
         onUpdateTask={async (taskId, changedProps) => {
           await update({ graphId: taskId, props: changedProps })
+        }}
+        onDeleteTask={(taskId) => remove(taskId)}
+        onSubtaskCreated={async () => {
+          await Promise.all([refetchGraph(), refetchListNode()])
         }}
       />
     </div>

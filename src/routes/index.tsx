@@ -8,7 +8,9 @@ import { Input } from '#/components/ui/Input'
 import { Modal } from '#/components/ui/Modal'
 import { authMiddleware, hasAuthSession } from '#/middleware/authMiddleware'
 import { useWorkspaces } from '#/features/workspaces/hooks/useWorkspaces'
+import { useWorkspaceMembers } from '#/features/workspaces/hooks/useWorkspaceMembers'
 import type { Workspace } from '#/features/workspaces/services/workspaceService'
+import { useCurrentUserId } from '#/features/auth/hooks/useCurrentUserId'
 
 export const Route = createFileRoute('/')({
   beforeLoad: authMiddleware,
@@ -100,56 +102,12 @@ function WorkspaceList() {
         ) : null}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {workspaces.map((workspace) => (
-            <Card
+            <WorkspaceCard
               key={workspace.id}
-              name={workspace.name}
-              description={workspace.description ?? ''}
-              members={
-                Array.isArray(workspace.members)
-                  ? workspace.members.length
-                  : (workspace.members ?? 0)
-              }
-              plan={workspace.plan ?? 'Free'}
-              onOpen={() =>
-                navigate({
-                  to: '/workspace/$id',
-                  params: { id: workspace.graph_id },
-                })
-              }
-            >
-              <div className="mt-3 flex flex-wrap gap-2">
-                <Button
-                  size="sm"
-                  variant="secondary"
-                  onClick={(event) => {
-                    event.stopPropagation()
-                    openModal('edit', workspace)
-                  }}
-                >
-                  Edit
-                </Button>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={(event) => {
-                    event.stopPropagation()
-                    openModal('member', workspace)
-                  }}
-                >
-                  Add member
-                </Button>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={(event) => {
-                    event.stopPropagation()
-                    openModal('delete', workspace)
-                  }}
-                >
-                  Delete
-                </Button>
-              </div>
-            </Card>
+              workspace={workspace}
+              navigate={navigate}
+              openModal={openModal}
+            />
           ))}
         </div>
       </div>
@@ -202,7 +160,6 @@ function WorkspaceList() {
                 addMember(
                   selectedWorkspace.id,
                   String(values.email ?? ''),
-                  String(values.role ?? 'member'),
                 ),
               )
             }}
@@ -290,5 +247,75 @@ function WorkspaceList() {
         )}
       </Modal>
     </section>
+  )
+}
+
+function WorkspaceCard({
+  workspace,
+  navigate,
+  openModal,
+}: {
+  workspace: Workspace
+  navigate: (options: { to: string; params: Record<string, unknown> }) => void
+  openModal: (type: 'create' | 'edit' | 'member' | 'delete' | null, workspace?: Workspace) => void
+}) {
+  const currentUserId = useCurrentUserId()
+  const { isCreator } = useWorkspaceMembers({
+    workspaceId: workspace.id,
+    currentUserId,
+  })
+
+  return (
+    <Card
+      name={workspace.name}
+      description={workspace.description ?? ''}
+      members={
+        Array.isArray(workspace.members)
+          ? workspace.members.length
+          : (workspace.members ?? 0)
+      }
+      plan={workspace.plan ?? 'Free'}
+      onOpen={() =>
+        navigate({
+          to: '/workspace/$id',
+          params: { id: workspace.graph_id },
+        })
+      }
+    >
+      {isCreator ? (
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Button
+            size="sm"
+            variant="secondary"
+            onClick={(event) => {
+              event.stopPropagation()
+              openModal('edit', workspace)
+            }}
+          >
+            Edit
+          </Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={(event) => {
+              event.stopPropagation()
+              openModal('member', workspace)
+            }}
+          >
+            Add member
+          </Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            onClick={(event) => {
+              event.stopPropagation()
+              openModal('delete', workspace)
+            }}
+          >
+            Delete
+          </Button>
+        </div>
+      ) : null}
+    </Card>
   )
 }
