@@ -4,6 +4,7 @@ import {
   MdDescription,
   MdFolder,
   MdFormatListBulleted,
+  MdPeople,
 } from 'react-icons/md'
 import type { SidebarItem } from '#/components/fragment/Sidebar'
 import { Avatar } from '#/components/ui/Avatar'
@@ -30,6 +31,12 @@ function createSpaceAvatar(name: string): SidebarItem['icon'] {
   return function SpaceAvatar({ className }: { className?: string }) {
     return <Avatar size="sm" fallback={initials} className={className} />
   }
+}
+
+const membersItem: SidebarItem = {
+  key: 'members',
+  label: 'Members',
+  icon: MdPeople,
 }
 
 const generalItems: SidebarItem = {
@@ -110,7 +117,7 @@ export function createSidebarItems(
   })
 
   return [
-    generalItems,
+    membersItem,
     {
       key: 'space',
       label: 'Space',
