@@ -10,6 +10,7 @@ export type GraphMeta = {
   assignee?: string
   duedate?: string
   priority?: string
+  tags?: string
 }
 
 export type GraphRelation = {
@@ -22,6 +23,8 @@ export type GraphRelations = {
   HAS_LISTS?: GraphRelation[]
   HAS_DOCUMENTS?: GraphRelation[]
   HAS_TASKS?: GraphRelation[]
+  HAS_SUBTASK?: GraphRelation[]
+  HAS_TAGS?: GraphRelation[]
 }
 
 export type GraphNode = { meta: GraphMeta } & GraphRelations
@@ -68,13 +71,12 @@ export type DirectPatchInput = {
 
 export type GraphUpdateInput = CreateChildInput | DirectPatchInput
 
-export function isCreateChild(
-  input: GraphUpdateInput,
-): input is CreateChildInput {
-  return !!(input.relation && input.label)
+export function isCreateChild(input: unknown): input is CreateChildInput {
+  if (typeof input !== 'object' || input === null) return false
+  return 'relation' in input && 'label' in input
 }
 
-export function buildCreateChildPayload(id: string, input: CreateChildInput) {
+export function buildCreateChildPayload(_id: string, input: CreateChildInput) {
   const props: Record<string, unknown> = {}
   if (input.name !== undefined) props.name = input.name
   if (input.props !== undefined) Object.assign(props, input.props)

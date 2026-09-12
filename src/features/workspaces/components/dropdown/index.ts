@@ -7,7 +7,7 @@ export type { Priority, PriorityDropdownProps, PriorityOption } from './Priority
 export { defaultStatusOptions, StatusDropdown } from './StatusDropdown'
 export type { StatusDropdownProps, StatusOption, TaskStatus } from './StatusDropdown'
 
-export { AssigneesDropdown, defaultAssigneeOptions } from './AssigneesDropdown'
+export { AssigneesDropdown } from './AssigneesDropdown'
 export type { Assignee, AssigneesDropdownProps } from './AssigneesDropdown'
 
 export { DueDateDropdown } from './DueDateDropdown'

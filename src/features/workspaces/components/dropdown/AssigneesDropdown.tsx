@@ -1,27 +1,22 @@
 import { useState } from 'react'
+import type { MemberOption } from '#/features/workspace/components/listtasks/u5'
 import { Avatar } from '#/components/ui/Avatar'
 import { DropdownPopover } from './Popover'
 import { cn } from '#/lib/cn'
 
+/** @deprecated Use {@link MemberOption} from workspace members instead. Kept for local imports that reference `Assignee`. */
 export type Assignee = {
   id: string
   name: string
   color?: string
 }
 
-export const defaultAssigneeOptions: Assignee[] = [
-  { id: 'bagus-ridho', name: 'Bagus Ridho', color: '#f3533b' },
-  { id: 'rommy-zohara', name: 'Rommy Zohara', color: '#2563eb' },
-  { id: 'super', name: 'Super', color: '#d83b7d' },
-  { id: 'lailatul-fitria', name: 'Lailatul Fitria', color: '#e63980' },
-  { id: 'dimas-fauzi', name: 'Dimas Fauzi', color: '#e02d3c' },
-]
-
 export type AssigneesDropdownProps = {
   value?: string[]
   defaultValue?: string[]
   placeholder?: string
-  assignees?: Assignee[]
+  /** Workspace members rendered as assignee options. Must come from `workspace.members` via `workspaceToMemberOptions` or `useWorkspaceMembers`. Hardcoded/mock options are no longer supported. */
+  assignees: MemberOption[]
   onChange?: (value: string[]) => void
   triggerClassName?: string
   contentClassName?: string
@@ -40,7 +35,7 @@ export function AssigneesDropdown({
   value,
   defaultValue = [],
   placeholder = 'Assignees',
-  assignees = defaultAssigneeOptions,
+  assignees,
   onChange,
   triggerClassName,
   contentClassName,

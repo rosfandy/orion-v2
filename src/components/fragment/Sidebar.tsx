@@ -170,6 +170,13 @@ function MenuItem({
               })
               return
             }
+            if (item.key === 'members' && workspaceId) {
+              void router.navigate({
+                to: '/workspace/$id/m',
+                params: { id: workspaceId },
+              })
+              return
+            }
             onSelect(item)
             if (expandable && !isOpen) onToggle(item.key)
           }}
@@ -337,7 +344,7 @@ function ActionMenu({
 
 export function Sidebar({
   items,
-  title = 'Luminous UI',
+  title = 'Orion',
   activeItem,
   selectedKeys,
   defaultSelectedKeys,

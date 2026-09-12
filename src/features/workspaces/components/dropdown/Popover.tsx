@@ -26,7 +26,7 @@ export function DropdownPopover({
   onOpenChange,
 }: DropdownPopoverProps) {
   const [uncontrolledOpen, setUncontrolledOpen] = useState(defaultOpen)
-  const [rect, setRect] = useState<{ top: number; left: number; width: number } | null>(null)
+  const [rect, setRect] = useState<{ top: number; left: number; width: number; right: number } | null>(null)
   const triggerRef = useRef<HTMLDivElement>(null)
   const contentRef = useRef<HTMLDivElement>(null)
   const didAnimateRef = useRef(false)
@@ -51,7 +51,7 @@ export function DropdownPopover({
       const el = triggerRef.current?.querySelector('button')
       if (!el) return
       const bounds = el.getBoundingClientRect()
-      setRect({ top: bounds.bottom, left: bounds.left, width: bounds.width })
+      setRect({ top: bounds.bottom, left: bounds.left, width: bounds.width, right: bounds.right })
     }
 
     updateRect()
@@ -128,21 +128,33 @@ export function DropdownPopover({
         {trigger}
       </button>
       {open && rect
-        ? createPortal(
-            <div
-              ref={contentRef}
-              className={cn('z-50', contentClassName)}
-              style={{
-                position: 'fixed',
-                top: rect.top + 4,
-                left: rect.left,
-                minWidth: rect.width,
-              }}
-            >
-              {children}
-            </div>,
-            document.body,
-          )
+        ? (() => {
+            const vw = typeof window !== 'undefined' ? window.innerWidth : 1000
+            // Estimate content width from className or fallback
+            let estimatedWidth = 280 // default
+            if (typeof contentClassName === 'string') {
+              const m = contentClassName.match(/w-\[(\d+)px\]/)
+              if (m) estimatedWidth = parseInt(m[1], 10)
+            }
+            const willOverflow = rect.left + estimatedWidth > vw
+
+            return createPortal(
+              <div
+                ref={contentRef}
+                className={cn('z-50', contentClassName)}
+                style={{
+                  position: 'fixed',
+                  top: rect.top + 4,
+                  left: willOverflow ? undefined : rect.left,
+                  right: willOverflow ? `calc(100vw - ${rect.right}px)` : undefined,
+                  minWidth: rect.width,
+                }}
+              >
+                {children}
+              </div>,
+              document.body,
+            )
+          })()
         : null}
     </div>
   )

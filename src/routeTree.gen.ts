@@ -15,6 +15,7 @@ import { Route as AuthRegisterRouteImport } from './routes/auth/register'
 import { Route as WorkspaceIdRouteImport } from './routes/workspace/$id'
 import { Route as OauthProviderCallbackRouteImport } from './routes/oauth/$provider/callback'
 import { Route as WorkspaceIdIndexRouteImport } from './routes/workspace/$id/index'
+import { Route as WorkspaceIdMRouteImport } from './routes/workspace/$id/m'
 import { Route as WorkspaceIdSLListidRouteImport } from './routes/workspace/$id/s/l/$listid'
 
 const IndexRoute = IndexRouteImport.update({
@@ -47,6 +48,11 @@ const WorkspaceIdIndexRoute = WorkspaceIdIndexRouteImport.update({
   path: '/',
   getParentRoute: () => WorkspaceIdRoute,
 } as any)
+const WorkspaceIdMRoute = WorkspaceIdMRouteImport.update({
+  id: '/m',
+  path: '/m',
+  getParentRoute: () => WorkspaceIdRoute,
+} as any)
 const WorkspaceIdSLListidRoute = WorkspaceIdSLListidRouteImport.update({
   id: '/s/l/$listid',
   path: '/s/l/$listid',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/auth/register': typeof AuthRegisterRoute
   '/workspace/$id': typeof WorkspaceIdRouteWithChildren
   '/oauth/$provider/callback': typeof OauthProviderCallbackRoute
+  '/workspace/$id/m': typeof WorkspaceIdMRoute
   '/workspace/$id/': typeof WorkspaceIdIndexRoute
   '/workspace/$id/s/l/$listid': typeof WorkspaceIdSLListidRoute
 }
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/auth/login': typeof AuthLoginRoute
   '/auth/register': typeof AuthRegisterRoute
   '/oauth/$provider/callback': typeof OauthProviderCallbackRoute
+  '/workspace/$id/m': typeof WorkspaceIdMRoute
   '/workspace/$id': typeof WorkspaceIdIndexRoute
   '/workspace/$id/s/l/$listid': typeof WorkspaceIdSLListidRoute
 }
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/auth/register': typeof AuthRegisterRoute
   '/workspace/$id': typeof WorkspaceIdRouteWithChildren
   '/oauth/$provider/callback': typeof OauthProviderCallbackRoute
+  '/workspace/$id/m': typeof WorkspaceIdMRoute
   '/workspace/$id/': typeof WorkspaceIdIndexRoute
   '/workspace/$id/s/l/$listid': typeof WorkspaceIdSLListidRoute
 }
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/auth/register'
     | '/workspace/$id'
     | '/oauth/$provider/callback'
+    | '/workspace/$id/m'
     | '/workspace/$id/'
     | '/workspace/$id/s/l/$listid'
   fileRoutesByTo: FileRoutesByTo
@@ -96,6 +106,7 @@ export interface FileRouteTypes {
     | '/auth/login'
     | '/auth/register'
     | '/oauth/$provider/callback'
+    | '/workspace/$id/m'
     | '/workspace/$id'
     | '/workspace/$id/s/l/$listid'
   id:
@@ -105,6 +116,7 @@ export interface FileRouteTypes {
     | '/auth/register'
     | '/workspace/$id'
     | '/oauth/$provider/callback'
+    | '/workspace/$id/m'
     | '/workspace/$id/'
     | '/workspace/$id/s/l/$listid'
   fileRoutesById: FileRoutesById
@@ -161,6 +173,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkspaceIdIndexRouteImport
       parentRoute: typeof WorkspaceIdRoute
     }
+    '/workspace/$id/m': {
+      id: '/workspace/$id/m'
+      path: '/m'
+      fullPath: '/workspace/$id/m'
+      preLoaderRoute: typeof WorkspaceIdMRouteImport
+      parentRoute: typeof WorkspaceIdRoute
+    }
     '/workspace/$id/s/l/$listid': {
       id: '/workspace/$id/s/l/$listid'
       path: '/s/l/$listid'
@@ -172,11 +191,13 @@ declare module '@tanstack/react-router' {
 }
 
 interface WorkspaceIdRouteChildren {
+  WorkspaceIdMRoute: typeof WorkspaceIdMRoute
   WorkspaceIdIndexRoute: typeof WorkspaceIdIndexRoute
   WorkspaceIdSLListidRoute: typeof WorkspaceIdSLListidRoute
 }
 
 const WorkspaceIdRouteChildren: WorkspaceIdRouteChildren = {
+  WorkspaceIdMRoute: WorkspaceIdMRoute,
   WorkspaceIdIndexRoute: WorkspaceIdIndexRoute,
   WorkspaceIdSLListidRoute: WorkspaceIdSLListidRoute,
 }
