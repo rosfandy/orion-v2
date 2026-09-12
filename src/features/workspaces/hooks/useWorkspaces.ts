@@ -5,6 +5,8 @@ import {
   deleteWorkspace,
   getWorkspace,
   listWorkspaces,
+  removeWorkspaceMember,
+  searchUserByEmailExact,
   updateWorkspace,
 } from '#/features/workspaces/services/workspaceService'
 import type { WorkspaceInput } from '#/features/workspaces/services/workspaceService'
@@ -40,17 +42,19 @@ export function useWorkspaces() {
       queryClient.invalidateQueries({ queryKey: workspacesQueryKey }),
   })
   const memberMutation = useMutation({
-    mutationFn: ({
-      id,
-      email,
-      role,
-    }: {
-      id: string
-      email: string
-      role?: string
-    }) => addWorkspaceMember(id, email, role),
+    mutationFn: ({ id, email }: { id: string; email: string }) =>
+      addWorkspaceMember(id, email),
     onSuccess: () =>
       queryClient.invalidateQueries({ queryKey: workspacesQueryKey }),
+  })
+  const removeMemberMutation = useMutation({
+    mutationFn: ({ id, userId }: { id: string; userId: string }) =>
+      removeWorkspaceMember(id, userId),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: workspacesQueryKey }),
+  })
+  const searchMemberMutation = useMutation({
+    mutationFn: (email: string) => searchUserByEmailExact(email),
   })
 
   return {
@@ -63,12 +67,18 @@ export function useWorkspaces() {
     update: (id: string, input: Partial<WorkspaceInput>) =>
       updateMutation.mutateAsync({ id, input }),
     remove: (id: string) => deleteMutation.mutateAsync(id),
-    addMember: (id: string, email: string, role = 'member') =>
-      memberMutation.mutateAsync({ id, email, role }),
+    addMember: (id: string, email: string) =>
+      memberMutation.mutateAsync({ id, email }),
+    removeMember: (id: string, userId: string) =>
+      removeMemberMutation.mutateAsync({ id, userId }),
+    searchUserByEmail: (email: string) =>
+      searchMemberMutation.mutateAsync(email),
     isMutating:
       createMutation.isPending ||
       updateMutation.isPending ||
       deleteMutation.isPending ||
-      memberMutation.isPending,
+      memberMutation.isPending ||
+      removeMemberMutation.isPending ||
+      searchMemberMutation.isPending,
   }
 }

@@ -1,5 +1,7 @@
 import { apiClient } from '#/config/axios'
 
+export type SearchUser = { id: string; name: string; email: string }
+
 export type Workspace = {
   id: string
   graph_id: string
@@ -50,10 +52,26 @@ export function updateWorkspace(id: string, input: Partial<WorkspaceInput>) {
 export function deleteWorkspace(id: string) {
   return request<void>({ url: `/workspaces/${id}`, method: 'DELETE' })
 }
-export function addWorkspaceMember(id: string, email: string, role = 'member') {
+export function addWorkspaceMember(id: string, email: string) {
   return request<Workspace>({
     url: `/workspaces/${id}/members`,
     method: 'POST',
-    data: { email, role },
+    data: { email },
+  })
+}
+
+export async function searchUserByEmailExact(email: string): Promise<SearchUser> {
+  const { data: result } = await apiClient.get<{ success: boolean; data: SearchUser; message: string }>(
+    '/users/search/email',
+    { params: { email } },
+  )
+  if (!result.success) throw new Error(result.message || 'User search failed')
+  return result.data
+}
+
+export function removeWorkspaceMember(id: string, userId: string) {
+  return request<Workspace>({
+    url: `/workspaces/${id}/members/${userId}`,
+    method: 'DELETE',
   })
 }
