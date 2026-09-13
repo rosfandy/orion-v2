@@ -100,9 +100,7 @@ export function MembersPage({ workspaceId, currentUserId }: Props) {
 
         {/* ── Add member button ── */}
         {!isCreator ? (
-          <p className="text-body-sm text-on-surface-variant">
-            Read-only: only the workspace creator can manage members.
-          </p>
+          <p className="text-body-sm text-on-surface-variant"></p>
         ) : (
           <button
             type="button"
@@ -114,7 +112,10 @@ export function MembersPage({ workspaceId, currentUserId }: Props) {
         )}
 
         {error ? (
-          <div role="alert" className="mt-4 rounded-lg bg-error/10 p-4 text-body-sm text-error">
+          <div
+            role="alert"
+            className="mt-4 rounded-lg bg-error/10 p-4 text-body-sm text-error"
+          >
             Failed to load members. Please try again.
           </div>
         ) : null}
@@ -184,7 +185,7 @@ function AddMemberModal({
   return (
     <Modal open={open} onClose={onClose} title="Add member">
       {/* State A: just the email input */}
-      {(!foundUser && !searchError) ? (
+      {!foundUser && !searchError ? (
         <>
           <Input
             id="add-member-email"
@@ -208,10 +209,7 @@ function AddMemberModal({
             </Button>
           </div>
         </>
-      ) : /* State B: result shown (found or not-found) */ null ? (
-        /* handled below */
-        null
-      ) : null}
+      ) : /* State B: result shown (found or not-found) */ null /* handled below */ ? null : null}
 
       {/* State C: found user — tap to add directly */}
       {foundUser ? (
@@ -245,7 +243,10 @@ function AddMemberModal({
         </>
       ) : /* State D: no account found */ searchError ? (
         <>
-          <div role="alert" className="mb-4 rounded-lg bg-error/10 p-3 text-body-sm text-error">
+          <div
+            role="alert"
+            className="mb-4 rounded-lg bg-error/10 p-3 text-body-sm text-error"
+          >
             {searchError}
           </div>
           <div className="flex items-center justify-end gap-2">

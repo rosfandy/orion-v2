@@ -167,6 +167,10 @@ function MenuItem({
               void navigate(`/workspace/${workspaceId}/s/l/${item.key}`)
               return
             }
+            if (item.type === 'document' && workspaceId) {
+              void navigate(`/workspace/${workspaceId}/s/d/${item.key}`)
+              return
+            }
             if (item.key === 'members' && workspaceId) {
               void navigate(`/workspace/${workspaceId}/m`)
               return

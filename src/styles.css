@@ -91,3 +91,8 @@ body {
   font-family: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.tiptap {
+  min-height: 100vh;
+  padding: 24px;
+}

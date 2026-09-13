@@ -28,11 +28,12 @@ export default function Workspace() {
     : {}
   const location = useLocation()
   const listId = location.pathname.match(/\/s\/l\/([^/]+)/)?.[1]
+  const docId = location.pathname.match(/\/s\/d\/([^/]+)/)?.[1]
 
   return (
     <AppLayout
       sidebarItems={createSidebarItems(graph, refreshedNodes)}
-      activeItem={listId ?? activeItem}
+      activeItem={docId ?? listId ?? activeItem}
       workspaceId={id}
       onSidebarSelect={(key, item) => {
         setActiveItem(key)
